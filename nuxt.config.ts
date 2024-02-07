@@ -7,8 +7,10 @@ export default defineNuxtConfig({
   ],
 
   runtimeConfig: {
-    API_SPOTIFY_CLIENT: process.env.SPOTIFY_CLIENT,
-    API_SPOTIFY_SECRET: process.env.SPOTIFY_SECRET,
+    public: {
+      API_SPOTIFY_CLIENT: process.env.SPOTIFY_CLIENT,
+      API_SPOTIFY_SECRET: process.env.SPOTIFY_SECRET,
+    },
   },
 
 })

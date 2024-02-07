@@ -1,8 +1,8 @@
 <script setup>
   import axios from 'axios';
 
-  const apiSpotify_CLIENT = useRuntimeConfig().API_SPOTIFY_CLIENT;
-  const apiSpotify_SECRET = useRuntimeConfig().API_SPOTIFY_SECRET;
+  const apiSpotify_CLIENT = useRuntimeConfig().public.API_SPOTIFY_CLIENT;
+  const apiSpotify_SECRET = useRuntimeConfig().public.API_SPOTIFY_SECRET;
 
   const getToken = async () => {
       const credentials = `${apiSpotify_CLIENT}:${apiSpotify_SECRET}`;
